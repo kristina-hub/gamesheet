@@ -46,28 +46,6 @@ PgAdmin4: user@domain.com pgadmin2024
 PostgreSQL: user postgres2024
 ```
 
-**Other useful Docker commands:**
-
-```
-docker ps -a
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-docker container prune -f
-docker rm -f pgadmin-container
-docker exec -it postgres-container psql -U user
-\c greeting_db
-SELECT * FROM greeting;
-```
-
-**Other useful Maven commands:**
-
-```
-./mvnw install
-./mvnw clean
-./mvnw test
-./mvnw dependency:tree
-```
-
 **Sample output:**
 
 ```
@@ -83,7 +61,7 @@ Team found with findById(1L):
 --------------------------------
 Team [id=1, content='Brampton Steelheads']
 
-: Team found with findByContent('Kitchener Rangers'):
+Team found with findByContent('Kitchener Rangers'):
 --------------------------------------------
 Team [id=4, content='Kitchener Rangers']
 ```
