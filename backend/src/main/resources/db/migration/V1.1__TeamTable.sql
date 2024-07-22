@@ -1,0 +1,5 @@
+CREATE TABLE team_schema.team (
+    id BIGINT NOT NULL PRIMARY KEY,
+    content VARCHAR(255)
+);
+CREATE SEQUENCE team_seq START WITH 1 INCREMENT BY 50;

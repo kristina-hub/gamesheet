@@ -1,0 +1,15 @@
+<div>
+  <h2>Edit Team</h2>
+  <form (ngSubmit)="editTeam()">
+    <div>
+      <label for="id">Team ID:</label>
+      <input type="number" id="id" name="id" [(ngModel)]="teamId" required>
+    </div>
+    <div>
+      <label for="content">Updated Team Content:</label>
+      <input type="text" id="content" name="content" [(ngModel)]="updatedTeam.content" required>
+    </div>
+    <button type="submit">Save Changes</button>
+  </form>
+  <div *ngIf="msg">{{ msg }}</div>
+</div>

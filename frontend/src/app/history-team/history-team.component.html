@@ -1,0 +1,10 @@
+<div>
+  <h2>Team History</h2>
+  <label for="teamId">Enter Team ID:</label>
+  <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId">
+  <button (click)="fetchTeamHistory()">Fetch History</button>
+  <div *ngIf="errorMsg">{{ errorMsg }}</div>
+  <ul *ngIf="teamHistory.length > 0">
+    <li *ngFor="let team of teamHistory">{{ team.content }}</li>
+  </ul>
+</div>

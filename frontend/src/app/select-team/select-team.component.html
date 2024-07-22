@@ -1,0 +1,11 @@
+<div>
+  <h2>Show Team By ID</h2>
+  <label for="teamId">Enter Team ID:</label>
+  <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId">
+  <button (click)="getTeamById()">Fetch Team</button>
+  <div *ngIf="selectedTeam">
+    <p>Team ID: {{ selectedTeam.id }}</p>
+    <p>Team Content: {{ selectedTeam.content }}</p>
+  </div>
+  <div *ngIf="errorMsg">{{ errorMsg }}</div>
+</div>
