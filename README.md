@@ -31,11 +31,11 @@ ng serve
 
 **To access the running application in a browser:**
 
-1. http://localhost:8080/team/show
-2. http://localhost:8080/team/post
-3. http://localhost:8080/team/edit
-4. http://localhost:8080/team/select
-5. http://localhost:8080/team/history
+1. http://localhost:4200/team/show
+2. http://localhost:4200/team/post
+3. http://localhost:4200/team/edit
+4. http://localhost:4200/team/select
+5. http://localhost:4200/team/history
 
 **To access api documentation on swagger and login to PgAdmin4:**
 
