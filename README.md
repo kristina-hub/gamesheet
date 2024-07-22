@@ -15,16 +15,18 @@ Web application that shows a list of hockey teams. It allows users to edit team 
 
 **To run the application:**
 
-1. docker pull postgres
-2. docker run --name postgres-container -e POSTGRES_USER=user -e POSTGRES_PASSWORD=postgres2024 -p 5432:5432 -d postgres
-3. docker ps -a
-4. docker pull dpage/pgadmin4
-5. docker run --name pgadmin-container -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=pgadmin2024 -d dpage/pgadmin4
-6. docker exec postgres-container psql -U user -c"CREATE DATABASE team_db" postgres
-7. cd backend
-8. ./mvnw spring-boot:run
-9. cd frontend
-10. ng serve
+```
+docker pull postgres
+docker run --name postgres-container -e POSTGRES_USER=user -e POSTGRES_PASSWORD=postgres2024 -p 5432:5432 -d postgres
+docker ps -a
+docker pull dpage/pgadmin4
+docker run --name pgadmin-container -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=pgadmin2024 -d dpage/pgadmin4
+docker exec postgres-container psql -U user -c"CREATE DATABASE team_db" postgres
+cd backend
+./mvnw spring-boot:run
+cd frontend
+ng serve
+```
 
 **To access the running application in a browser:**
 
