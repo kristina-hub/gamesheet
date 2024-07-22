@@ -4,8 +4,13 @@ import {ShowTeamComponent} from "./show-team/show-team.component";
 import {EditTeamComponent} from "./edit-team/edit-team.component";
 import {HistoryTeamComponent} from "./history-team/history-team.component";
 import {SelectTeamComponent} from "./select-team/select-team.component";
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
+  { 
+    path: '', 
+    component: HomeComponent 
+  }, // Default route
   {
     path: 'team/post',
     component: PostTeamComponent

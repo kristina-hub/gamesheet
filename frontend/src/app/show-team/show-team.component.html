@@ -1,4 +1,7 @@
-<h2>Show all teams:</h2>
-<div *ngFor="let greet of teams">
-  {{ greet.id }} - {{ greet.content }}
+<div class="teams-container">
+  <h2 class="teams-title">Show All Teams:</h2>
+  <div *ngFor="let team of teams" class="team-card">
+    <div class="team-id">ID: {{ team.id }}</div>
+    <div class="team-content">Content: {{ team.content }}</div>
+  </div>
 </div>

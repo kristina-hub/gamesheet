@@ -1,11 +1,16 @@
-<div>
-  <h2>Show Team By ID</h2>
-  <label for="teamId">Enter Team ID:</label>
-  <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId">
-  <button (click)="getTeamById()">Fetch Team</button>
-  <div *ngIf="selectedTeam">
-    <p>Team ID: {{ selectedTeam.id }}</p>
-    <p>Team Content: {{ selectedTeam.content }}</p>
+<div class="select-team-container">
+  <h2 class="select-team-title">Select Team By ID</h2>
+  <form class="select-team-form" (ngSubmit)="getTeamById()">
+    <div class="form-group">
+      <label for="teamId" class="form-label">Enter Team ID:</label>
+      <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId" class="form-input" placeholder="e.g. 123">
+    </div>
+    <button type="submit" class="form-button">Fetch Team</button>
+  </form>
+  <div *ngIf="selectedTeam" class="team-details">
+    <p><strong>Team ID:</strong> {{ selectedTeam.id }}</p>
+    <p><strong>Team Content:</strong> {{ selectedTeam.content }}</p>
   </div>
-  <div *ngIf="errorMsg">{{ errorMsg }}</div>
+  <div *ngIf="errorMsg" class="error-message">{{ errorMsg }}</div>
 </div>
+

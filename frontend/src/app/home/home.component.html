@@ -1,0 +1,13 @@
+<div class="home-container">
+  <h1 class="welcome-title">Welcome to Team Management</h1>
+  <div class="button-container">
+    <button onclick="window.location='http://localhost:4200/team/post'"class="nav-button">Post Team</button>
+    <button onclick="window.location='http://localhost:4200/team/show'" class="nav-button">Show Team</button>
+    <button onclick="window.location='http://localhost:4200/team/edit'" class="nav-button">Edit Team</button>
+    <button onclick="window.location='http://localhost:4200/team/history'" class="nav-button">Team History</button>
+    <button onclick="window.location='http://localhost:4200/team/select'" class="nav-button">Select Team</button>
+  </div>
+  <div *ngIf="displayText" class="text-display">
+    {{ displayText }}
+  </div>
+</div>

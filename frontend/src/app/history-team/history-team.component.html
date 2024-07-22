@@ -1,10 +1,14 @@
-<div>
-  <h2>Team History</h2>
-  <label for="teamId">Enter Team ID:</label>
-  <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId">
-  <button (click)="fetchTeamHistory()">Fetch History</button>
-  <div *ngIf="errorMsg">{{ errorMsg }}</div>
-  <ul *ngIf="teamHistory.length > 0">
-    <li *ngFor="let team of teamHistory">{{ team.content }}</li>
+<div class="team-history-container">
+  <h2 class="team-history-title">Team History</h2>
+  <form class="team-history-form" (ngSubmit)="fetchTeamHistory()">
+    <div class="form-group">
+      <label for="teamId" class="form-label">Enter Team ID:</label>
+      <input type="text" id="teamId" name="teamId" [(ngModel)]="selectedTeamId" class="form-input" placeholder="e.g. 123">
+    </div>
+    <button type="submit" class="form-button">Fetch History</button>
+  </form>
+  <div *ngIf="errorMsg" class="error-message">{{ errorMsg }}</div>
+  <ul *ngIf="teamHistory.length > 0" class="team-history-list">
+    <li *ngFor="let team of teamHistory" class="team-history-item">{{ team.content }}</li>
   </ul>
 </div>

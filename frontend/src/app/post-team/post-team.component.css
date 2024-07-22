@@ -1,0 +1,65 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styling */
+  .post-team-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .post-team-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .post-team-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Input field styling */
+  .post-team-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Button styling */
+  .post-team-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .post-team-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Message styling */
+  .post-team-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+    text-align: center;
+  }
+  
