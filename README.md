@@ -6,12 +6,13 @@ Web application that shows a list of hockey teams. It allows users to edit team 
 
 **Tools used:**
 
-1. Maven: to manage dependencies
+1. Spring Boot: used to create the Java application
 2. Angular: used to build web pages using HTML and Typescript
-3. Spring Boot: used to create the Java application
+3. Maven: to manage dependencies
 4. PostgreSQL: to manage the relational database
-5. pgAdmin: UI to manage PostgreSQL database
+5. pgAdmin4: UI to manage PostgreSQL database
 6. Docker: builds and runs application using containers
+7. Swagger: UI to manage API documentation
 
 **To run the application:**
 
