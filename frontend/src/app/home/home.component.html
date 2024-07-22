@@ -1,13 +1,27 @@
-<div class="home-container">
-  <h1 class="welcome-title">Welcome to Team Management</h1>
-  <div class="button-container">
-    <button onclick="window.location='http://localhost:4200/team/post'"class="nav-button">Post Team</button>
-    <button onclick="window.location='http://localhost:4200/team/show'" class="nav-button">Show Team</button>
-    <button onclick="window.location='http://localhost:4200/team/edit'" class="nav-button">Edit Team</button>
-    <button onclick="window.location='http://localhost:4200/team/history'" class="nav-button">Team History</button>
-    <button onclick="window.location='http://localhost:4200/team/select'" class="nav-button">Select Team</button>
+<div class="header">
+  <h1>GameSheet</h1>
+  <p>Display and edit various hockey teams.</p>
+</div>
+
+<div class="navbar">
+  <a href="http://localhost:4200/team/show">Show Team</a>
+  <a href="http://localhost:4200/team/select">Select Team</a>
+  <a href="http://localhost:4200/team/post">Add Team</a>
+  <a href="http://localhost:4200/team/edit">Edit Team</a>
+  <a href="http://localhost:4200/team/history">Team History</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Hockey Teams</h2>
+    <!-- <div class="hockey.jpg" style="height:200px;">Image</div> -->
+    <!-- <p>Some text </p> -->
   </div>
-  <div *ngIf="displayText" class="text-display">
-    {{ displayText }}
+  <div class="main">
+    <h2>Soccer Teams</h2>
   </div>
+</div>
+
+<div class="footer">
+  <h2>Contact us: 1-800-647-7658</h2>
 </div>
